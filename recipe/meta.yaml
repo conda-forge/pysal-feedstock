@@ -1,4 +1,4 @@
-{% set version = "1.11.2" %}
+{% set version = "1.12.0" %}
 
 package:
     name: pysal
@@ -7,7 +7,7 @@ package:
 source:
     fn: pysal-{{ version }}.tar.gz
     url: https://github.com/pysal/pysal/archive/v{{ version }}.tar.gz
-    sha256: 50f1b9c64dbb0e16d30e298ffec3bfaf2afb88c5f450c65220884f7a731e9920
+    sha256: 9dfa61d960b925acde3070948cae0799167bd3ba867ba178c9f6ff67b515eec4
 
 build:
     number: 0
@@ -31,7 +31,7 @@ about:
     license: BSD 3-Clause
     license_family: BSD
     license_file: LICENSE.txt
-    summary: library of spatial analysis functions
+    summary: 'Library of spatial analysis functions.'
 
 extra:
     recipe-maintainers:
