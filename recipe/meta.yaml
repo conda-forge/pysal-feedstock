@@ -1,39 +1,39 @@
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
-    name: pysal
-    version: {{ version }}
+  name: pysal
+  version: {{ version }}
 
 source:
-    fn: pysal-{{ version }}.tar.gz
-    url: https://github.com/pysal/pysal/archive/v{{ version }}.tar.gz
-    sha256: 9dfa61d960b925acde3070948cae0799167bd3ba867ba178c9f6ff67b515eec4
+  fn: pysal-{{ version }}.tar.gz
+  url: https://github.com/pysal/pysal/archive/v{{ version }}.tar.gz
+  sha256: d4336a3eab927ef17b5375a77c41498fd8edfcfd88eb8e2ae687c41714c2b6cb
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-        - scipy
-    run:
-        - python
-        - scipy
+  build:
+    - python
+    - setuptools
+    - scipy
+  run:
+    - python
+    - scipy
 
 test:
-    imports:
-        - pysal
+  imports:
+    - pysal
 
 about:
-    home: http://pysal.org
-    license: BSD 3-Clause
-    license_family: BSD
-    license_file: LICENSE.txt
-    summary: 'Library of spatial analysis functions.'
+  home: http://pysal.org
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: 'Library of spatial analysis functions.'
 
 extra:
-    recipe-maintainers:
-        - sjsrey
-        - ocefpaf
+  recipe-maintainers:
+    - sjsrey
+    - ocefpaf
