@@ -14,7 +14,9 @@ Summary: Library of spatial analysis functions.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pysal-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysal-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pysal-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysal-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pysal-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pysal-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pysal-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pysal-feedstock/branch/master)
 
 Current release info
 ====================
