@@ -14,14 +14,15 @@ Summary: Library of spatial analysis functions.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pysal-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysal-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pysal-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pysal-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pysal-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pysal-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pysal-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pysal-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysal/badges/version.svg)](https://anaconda.org/conda-forge/pysal)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysal/badges/downloads.svg)](https://anaconda.org/conda-forge/pysal)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pysal-green.svg)](https://anaconda.org/conda-forge/pysal) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pysal.svg)](https://anaconda.org/conda-forge/pysal) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pysal.svg)](https://anaconda.org/conda-forge/pysal) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pysal.svg)](https://anaconda.org/conda-forge/pysal) |
 
 Installing pysal
 ================
