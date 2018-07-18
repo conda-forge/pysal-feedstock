@@ -1,4 +1,4 @@
-{% set version = "1.14.3" %}
+{% set version = "1.14.4" %}
 
 package:
   name: pysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/PySAL/PySAL-{{ version }}.tar.gz
-  sha256: e2145c5c5bdfa7c1989154037dba8385ede5aa21354e2d5278705ac902d06a31
+  sha256: a6f7cff5e26075b070155734079f65dc566e095162263c068646211f1ea9067b
 
 build:
   number: 0
