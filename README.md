@@ -3,11 +3,11 @@ About pysal
 
 Home: http://pysal.org
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Library of spatial analysis functions.
+Summary: Library of spatial analysis functions
 
 
 
