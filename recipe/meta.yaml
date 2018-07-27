@@ -9,17 +9,17 @@ source:
   sha256: 396ea62dcb228f80587aabb867315214ad9e891436fb6416a9ae46eb01258315
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
     - python
     - scipy >=0.11
-    - numpy >=1.3
+    - numpy
 
 test:
   imports:
@@ -27,10 +27,10 @@ test:
 
 about:
   home: http://pysal.org
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Library of spatial analysis functions.'
+  summary: 'Library of spatial analysis functions'
 
 extra:
   recipe-maintainers:
