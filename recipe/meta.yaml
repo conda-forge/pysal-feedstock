@@ -9,7 +9,7 @@ source:
   sha256: 9f7c910549f29fd966a4480beb183d8e6a2f813bf5a08c4273499fa9afa398ca
 
 build:
-  number: 1
+  number: 1001
   # uses 2to3 at the moment. Make it noarch when the code base is updated. 
   # noarch: pyhton
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
