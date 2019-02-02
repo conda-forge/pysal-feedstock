@@ -1,27 +1,31 @@
-{% set version = "1.14.4.post2" %}
+{% set name = "pysal" %}
+{% set version = "2.0.0" %}
 
 package:
-  name: pysal
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/P/PySAL/PySAL-{{ version }}.tar.gz
-  sha256: 9f7c910549f29fd966a4480beb183d8e6a2f813bf5a08c4273499fa9afa398ca
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e8dc75e48a6a16e89f295f7a25868671837862cb7d4862a3a171ddc80d07a23f
 
 build:
-  number: 1001
-  # uses 2to3 at the moment. Make it noarch when the code base is updated. 
-  # noarch: pyhton
+  number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
+    - descartes
+    - matplotlib
+    - palettable
+    - pandas
     - scipy >=0.11
-    - numpy
+    - seaborn
 
 test:
   imports:
@@ -44,3 +48,4 @@ extra:
   recipe-maintainers:
     - sjsrey
     - ocefpaf
+    - mariusvniekerk
