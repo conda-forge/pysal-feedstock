@@ -1,5 +1,5 @@
 {% set name = "pysal" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8dc75e48a6a16e89f295f7a25868671837862cb7d4862a3a171ddc80d07a23f
+  sha256: 3c21c58ebca187f2c2d6b83b624739627a1201f6bc7b80d6f970762e76149911
 
 build:
   number: 0
