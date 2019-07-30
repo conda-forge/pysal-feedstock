@@ -1,18 +1,17 @@
-{% set name = "pysal" %}
 {% set version = "2.1.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: pysal
+  version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pysal/pysal-{{ version }}.tar.gz
   sha256: 3c21c58ebca187f2c2d6b83b624739627a1201f6bc7b80d6f970762e76149911
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -20,12 +19,17 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - descartes
-    - matplotlib
-    - palettable
+    - scipy
     - pandas
-    - scipy >=0.11
     - seaborn
+    - matplotlib
+    - descartes
+    - palettable
+    - scikit-learn
+    - geopandas
+    - deprecated
+    - rtree
+    - tqdm
 
 test:
   imports:
