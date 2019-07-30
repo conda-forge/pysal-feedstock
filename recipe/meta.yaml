@@ -30,6 +30,7 @@ requirements:
     - deprecated
     - rtree
     - tqdm
+    - zstd
 
 test:
   imports:
