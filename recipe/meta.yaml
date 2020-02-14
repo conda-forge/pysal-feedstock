@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: pysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pysal/pysal-{{ version }}.tar.gz
-  sha256: 3c21c58ebca187f2c2d6b83b624739627a1201f6bc7b80d6f970762e76149911
+  sha256: d712156895b1e6c672f6929804bf86ab54d9f5d197b1cb97452c68583a162820
 
 build:
   number: 0
@@ -15,26 +15,35 @@ build:
 
 requirements:
   host:
-    - python >=3.6
     - pip
+    - python >=3.7
   run:
-    - python >=3.6
-    - scipy
-    - pandas
-    - seaborn
-    - matplotlib
-    - descartes
-    - palettable
-    - scikit-learn
-    - geopandas
-    - deprecated
-    - rtree
-    - tqdm
-    - zstd
+    - esda >=2.2.1
+    - giddy >=2.3.0
+    - inequality >=1.0.0
+    - libpysal >=4.2.2
+    - mapclassify >=2.2.0
+    - mgwr >=2.1.1
+    - pointpats >=2.1.0
+    - python >=3.7
+    - python-dateutil <=2.8.0
+    - segregation >=1.2.0
+    - spaghetti >=1.4.1
+    - spglm >=1.0.7
+    - spint >=1.0.6
+    - splot >=1.1.2
+    - spreg >=1.0.4
+    - spvcm >=0.3.0
+    - tobler >=0.2.0
+    - urllib3 <1.25
 
 test:
   imports:
     - pysal
+    - pysal.viz
+    - pysal.explore
+    - pysal.model
+    - pysal.lib
 
 about:
   home: http://pysal.org
@@ -54,3 +63,4 @@ extra:
     - sjsrey
     - ocefpaf
     - mariusvniekerk
+    - marcelotrevisani
