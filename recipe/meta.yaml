@@ -48,10 +48,6 @@ test:
     - pysal.explore
     - pysal.model
     - pysal.lib
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: http://pysal.org
