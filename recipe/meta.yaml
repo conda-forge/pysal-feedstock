@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: pysal
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pysal/pysal-{{ version }}.tar.gz
-  sha256: d712156895b1e6c672f6929804bf86ab54d9f5d197b1cb97452c68583a162820
+  sha256: 6f15a1432ff6805edd53ba6a5444f9af4ba2acd8a78f8f678c8bc09ffb0debe1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -50,7 +50,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Library of spatial analysis functions'
+  summary: Library of spatial analysis functions
   description: |
     PySAL(Python Spatial Analysis Library) for spatial data science and the development of high level applications.
   doc_url: http://pysal.org/pysal
