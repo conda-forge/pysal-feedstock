@@ -5,12 +5,11 @@ Home: http://pysal.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Library of spatial analysis functions
 
-PySAL(Python Spatial Analysis Library) is written in Python intended to support the
-development of high level applications.
+PySAL(Python Spatial Analysis Library) for spatial data science and the development of high level applications.
 
 
 Current build status
