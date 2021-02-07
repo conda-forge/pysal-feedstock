@@ -5,9 +5,13 @@ Home: http://pysal.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysal-feedstock/blob/master/LICENSE.txt)
 
 Summary: Library of spatial analysis functions
+
+Development: https://github.com/pysal
+
+Documentation: http://pysal.org/pysal
 
 PySAL(Python Spatial Analysis Library) for spatial data science and the development of high level applications.
 
