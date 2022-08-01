@@ -45,10 +45,11 @@ test:
     - pysal.explore
     - pysal.model
     - pysal.lib
-  commands:
-    - pip check
-  requires:
-    - pip
+  # See https://github.com/conda-forge/pointpats-feedstock/pull/4
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: http://pysal.org
