@@ -9,34 +9,34 @@ source:
   sha256: 35fb295b6c4dc4d2b584530e37c336aaf10ce1e3771279cb25598a82279b0699
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.7
     - pip
-  run:
     - python >=3.7
-    - access >=1.1.3
+  run:
+    - access >=1.1.8
     - esda >=2.4.1
     - giddy >=2.3.3
     - inequality >=1.0.0
-    - libpysal >=4.6.0
+    - libpysal >=4.6.2
     - mapclassify >=2.4.3
     - mgwr >=2.1.2
+    - momepy >=0.5.3
     - pointpats >=2.2.0
-    - segregation >=2.1.0
-    - spaghetti >=1.6.5
+    - python >=3.7
+    - segregation >=2.3.1
+    - spaghetti >=1.6.6
     - spglm >=1.0.8
     - spint >=1.0.7
-    - splot >=1.1.4
-    - spopt >=0.2.1
+    - splot >=1.1.5.post1
+    - spopt >=0.4.1
     - spreg >=1.2.4
     - spvcm >=0.3.0
     - tobler >=0.8.2
-    - momepy >=0.5.2
 
 test:
   imports:
@@ -45,6 +45,10 @@ test:
     - pysal.explore
     - pysal.model
     - pysal.lib
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pysal.org
