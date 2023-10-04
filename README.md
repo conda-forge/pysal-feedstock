@@ -1,11 +1,11 @@
-About pysal
-===========
+About pysal-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysal-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pysal.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysal-feedstock/blob/main/LICENSE.txt)
 
 Summary: Library of spatial analysis functions
 
@@ -150,8 +150,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jGaboardi](https://github.com/jGaboardi/)
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@sjsrey](https://github.com/sjsrey/)
 
