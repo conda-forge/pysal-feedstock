@@ -1,4 +1,4 @@
-{% set version = "24.1" %}
+{% set version = "24.7" %}
 
 package:
   name: pysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pysal/pysal-{{ version }}.tar.gz
-  sha256: ed84c663c8daf73f5d83daa1ce01f14915fde3cf21b5d46259905cc733336dfb
+  sha256: 7cf9d520b21c3c5db15d08d0f670e6b1cc4f029df46a31b9ddaee2d4b1210c8b
 
 build:
   noarch: python
@@ -15,29 +15,30 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pip
-    - versioneer
+    - setuptools
+    - setuptools_scm
   run:
-    - python >=3.7
-    - libpysal >=4.6.2
-    - access >=1.1.8
-    - esda >=2.4.1
-    - giddy >=2.3.3
-    - inequality >=1.0.0
-    - pointpats >=2.2.0
-    - segregation >=2.3.1
-    - spaghetti >=1.6.6
-    - mgwr >=2.1.2
-    - momepy >=0.5.3
-    - spglm >=1.0.8
+    - python >=3.10
+    - libpysal >=4.12.0
+    - access >=1.1.9
+    - esda >=2.6.0
+    - giddy >=2.3.5
+    - inequality >=1.0.1
+    - pointpats >=2.5.0
+    - segregation >=2.5
+    - spaghetti >=1.7.6
+    - mgwr >=2.2.1
+    - momepy >=0.7.2
+    - spglm >=1.1.0
     - spint >=1.0.7
-    - spreg >=1.2.4
+    - spreg >=1.5.0
     - spvcm >=0.3.0
-    - tobler >=0.8.2
-    - mapclassify >=2.4.3
+    - tobler >=0.11.2
+    - mapclassify >=2.7.0
     - splot >=1.1.5.post1
-    - spopt >=0.4.1
+    - spopt >=0.6.1
 
 test:
   imports:
