@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set version = "24.7" %}
 
 package:
@@ -5,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pysal/pysal-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pysal/pysal-{{ version }}.tar.gz
   sha256: 7cf9d520b21c3c5db15d08d0f670e6b1cc4f029df46a31b9ddaee2d4b1210c8b
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - libpysal >=4.12.0
     - access >=1.1.9
     - esda >=2.6.0
@@ -41,6 +42,8 @@ requirements:
     - spopt >=0.6.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pysal
     - pysal.viz
