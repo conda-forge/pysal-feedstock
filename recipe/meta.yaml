@@ -1,5 +1,5 @@
-{% set python_min = '3.10' %}
-{% set version = "24.7" %}
+{% set python_min = "3.10" %}
+{% set version = "25.1" %}
 
 package:
   name: pysal
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pysal/pysal-{{ version }}.tar.gz
-  sha256: 7cf9d520b21c3c5db15d08d0f670e6b1cc4f029df46a31b9ddaee2d4b1210c8b
+  sha256: da101ba8cc1a67aa204157ab975ed048894f423dd14eef38850e5cd698cc56a0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
