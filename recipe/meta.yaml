@@ -1,5 +1,5 @@
-{% set python_min = "3.10" %}
-{% set version = "25.1" %}
+{% set python_min = "3.11" %}
+{% set version = "25.7" %}
 
 package:
   name: pysal
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pysal/pysal-{{ version }}.tar.gz
-  sha256: da101ba8cc1a67aa204157ab975ed048894f423dd14eef38850e5cd698cc56a0
+  sha256: ca1452a1d57811cbc4708002a38ece6fe58b8597f966b310731e2e4014ddf21b
 
 build:
   noarch: python
@@ -21,25 +21,38 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
+    - arm_pyart
+    - beautifulsoup4 >=4.10
+    - geopandas >=0.10.0
+    - numpy >=1.22
+    - packaging >=22
+    - pandas >=1.4
+    - platformdirs >=2.0.2
+    - pytz
+    - pyyaml
+    - requests >=2.27
+    - scikit-learn >=1.1
+    - scipy >=1.8
+    - shapely >=2.0.1
     - python >={{ python_min }}
-    - libpysal >=4.12.0
+    - libpysal >=4.13.0
     - access >=1.1.9
-    - esda >=2.6.0
-    - giddy >=2.3.5
-    - inequality >=1.0.1
-    - pointpats >=2.5.0
-    - segregation >=2.5
+    - esda >=2.7.1
+    - giddy >=2.3.6
+    - inequality >=1.1.2
+    - pointpats >=2.5.1
+    - segregation >=2.5.2
     - spaghetti >=1.7.6
     - mgwr >=2.2.1
-    - momepy >=0.7.2
+    - momepy >=0.10.0
     - spglm >=1.1.0
     - spint >=1.0.7
-    - spreg >=1.5.0
+    - spreg >=1.8.3
     - spvcm >=0.3.0
-    - tobler >=0.11.2
-    - mapclassify >=2.7.0
-    - splot >=1.1.5.post1
-    - spopt >=0.6.1
+    - tobler >=0.12.1
+    - mapclassify >=2.10.0
+    - splot >=1.1.7
+    - spopt >=0.7.0
 
 test:
   requires:
