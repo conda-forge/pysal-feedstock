@@ -3,7 +3,7 @@
 
 package:
   name: pysal
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/p/pysal/pysal-{{ version }}.tar.gz
@@ -22,7 +22,6 @@ requirements:
     - setuptools_scm
   run:
     - spml >=0.2.2
-    - gwlearn >=0.1.1
     - lazy_loader >=0.3
     - arm_pyart
     - beautifulsoup4 >=4.10
